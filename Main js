@@ -1,0 +1,22 @@
+var names=['Karen','Jose','Susan','Bill', 'Maayan','Aaron','Sarah','Isaiah'];
+
+    var doesNameExist = function (names, targetName){
+      targetName = targetName.toLowerCase();
+      
+      for(let i= 0; i < names.length; i++){
+        let name = names[i];
+        
+         name = name.toLowerCase();
+        
+        if(name === targetName){
+          
+          return true;
+        }
+          
+          
+      }
+      return false;       
+    };
+  
+   console.log(doesNameExist(names,'aaron'));
+   
